@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos de Mates | Germán Pazo</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+            --text: #1e293b;
+        }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        
+        .card { 
+            background: white; padding: 1.5rem; border-radius: 12px; 
+            text-decoration: none; color: inherit; border: 1px solid #e2e8f0;
+            transition: all 0.3s ease; display: flex; flex-direction: column;
+        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-color: var(--primary); }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .card p { font-size: 0.9rem; color: #64748b; flex-grow: 1; }
+        .tag { background: #dbeafe; color: #1e40af; padding: 0.2rem 0.6rem; border-radius: 20px; font-size: 0.75rem; align-self: flex-start; margin-bottom: 0.5rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Laboratori de Matemàtiques</h1>
+    <p>Eines interactives i recursos digitals</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <a href="https://germanpazo87.github.io/divisibilitat/" class="card">
+            <span class="tag">Aritmètica</span>
+            <h3>Explorador de Múltiples</h3>
+            <p>Visualitza patrons de divisibilitat i calcula el MCM de forma dinàmica sobre una graella.</p>
+        </a>
+
+        <a href="#" class="card" style="opacity: 0.6; cursor: not-allowed;">
+            <span class="tag">Geometria</span>
+            <h3>Geometria Interactiva</h3>
+            <p>Properament: Explorador d'àrees i perímetres amb formes dinàmiques.</p>
+        </a>
+
+        <a href="#" class="card" style="opacity: 0.6; cursor: not-allowed;">
+            <span class="tag">Estadística</span>
+            <h3>Generador de Gràfics</h3>
+            <p>Properament: Crea diagrames de barres i sectors a partir de dades reals.</p>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
